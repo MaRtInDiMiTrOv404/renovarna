@@ -74,6 +74,7 @@ html {
     scroll-padding-top: 100px;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -705,16 +706,15 @@ ul { list-style: none; }
 }
 
 .hero__stats {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 18px;
     padding: 24px 0 16px;
     border-top: 1px solid rgba(255,255,255,0.15);
     opacity: 0;
     animation: fadeIn 0.8s ease-out 1.3s forwards;
     width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -728,15 +728,16 @@ ul { list-style: none; }
     justify-items: center;
     align-items: center;
     text-align: center;
-    column-gap: 2px;
+    column-gap: 0;
     row-gap: 4px;
-    flex: 1 1 0;
     min-width: 0;
+    box-sizing: border-box;
     padding: 0 8px;
+    overflow-wrap: anywhere;
 }
 .hero__stat + .hero__stat {
     border-left: 1px solid rgba(255,255,255,0.15);
-    padding-left: 18px;
+    padding-left: 14px;
 }
 .hero__stat-number {
     grid-area: number;
@@ -745,6 +746,7 @@ ul { list-style: none; }
     color: var(--cyan-500);
     font-size: clamp(24px, 3vw, 36px);
     line-height: 1;
+    display: inline-block;
 }
 .hero__stat-suffix {
     grid-area: suffix;
@@ -753,11 +755,13 @@ ul { list-style: none; }
     color: var(--cyan-500);
     font-size: clamp(24px, 3vw, 36px);
     align-self: end;
+    display: inline-block;
     margin-left: 0;
 }
 .hero__stat-label {
     grid-area: label;
-    white-space: nowrap;
+    white-space: normal;
+    max-width: 100%;
 }
 
 .hero__stat-label {
