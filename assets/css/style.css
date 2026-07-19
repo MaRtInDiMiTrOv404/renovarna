@@ -720,7 +720,7 @@ ul { list-style: none; }
 }
 .hero__stat {
     display: grid;
-    grid-template-columns: auto max-content;
+    grid-template-columns: max-content max-content;
     grid-template-rows: auto auto;
     grid-template-areas:
         "number suffix"
@@ -728,7 +728,7 @@ ul { list-style: none; }
     justify-items: center;
     align-items: center;
     text-align: center;
-    column-gap: 0;
+    column-gap: 4px;
     row-gap: 4px;
     min-width: 0;
     box-sizing: border-box;
@@ -747,6 +747,7 @@ ul { list-style: none; }
     font-size: clamp(24px, 3vw, 36px);
     line-height: 1;
     display: inline-block;
+    white-space: nowrap;
 }
 .hero__stat-suffix {
     grid-area: suffix;
@@ -756,7 +757,8 @@ ul { list-style: none; }
     font-size: clamp(24px, 3vw, 36px);
     align-self: end;
     display: inline-block;
-    margin-left: 0;
+    margin-left: 4px;
+    white-space: nowrap;
 }
 .hero__stat-label {
     grid-area: label;

@@ -303,7 +303,7 @@
     }
     .hero__stat {
         display: grid;
-        grid-template-columns: auto max-content;
+        grid-template-columns: max-content max-content;
         grid-template-rows: auto auto;
         grid-template-areas:
             "number suffix"
@@ -311,7 +311,7 @@
         justify-items: center;
         align-items: center;
         text-align: center;
-        column-gap: 2px;
+        column-gap: 4px;
         row-gap: 4px;
         min-width: 0;
         padding: 8px 6px;
@@ -324,7 +324,11 @@
         padding-top: 14px;
     }
     .hero__stat-number,
-    .hero__stat-suffix { font-size: 22px; text-align: center; }
+    .hero__stat-suffix {
+        font-size: 22px;
+        text-align: center;
+        white-space: nowrap;
+    }
     .hero__stat-label { font-size: 10px; text-align: center; white-space: normal; max-width: 100%; }
     .hero__scroll { display: none; }
 
@@ -670,7 +674,7 @@
     }
     .hero__stat {
         display: grid;
-        grid-template-columns: auto max-content;
+        grid-template-columns: max-content max-content;
         grid-template-rows: auto auto;
         grid-template-areas:
             "number suffix"
@@ -808,7 +812,7 @@
     }
     .hero__stat {
         display: grid;
-        grid-template-columns: auto max-content;
+        grid-template-columns: max-content max-content;
         grid-template-rows: auto auto;
         grid-template-areas:
             "number suffix"
@@ -816,7 +820,7 @@
         justify-items: center;
         align-items: center;
         text-align: center;
-        column-gap: 0;
+        column-gap: 4px;
         row-gap: 4px;
         min-width: 0;
         padding: 10px 6px;
@@ -921,7 +925,7 @@
     }
     .hero__stat {
         display: grid;
-        grid-template-columns: auto max-content;
+        grid-template-columns: max-content max-content;
         grid-template-rows: auto auto;
         grid-template-areas:
             "number suffix"
@@ -929,13 +933,18 @@
         justify-items: center;
         align-items: center;
         text-align: center;
-        column-gap: 0;
+        column-gap: 4px;
         row-gap: 4px;
         min-width: 0;
         padding: 0;
     }
     .hero__stat-number,
-    .hero__stat-suffix { font-size: 22px; text-align: center; display: inline-block; }
+    .hero__stat-suffix {
+        font-size: 22px;
+        text-align: center;
+        display: inline-block;
+        white-space: nowrap;
+    }
     .hero__stat-label { font-size: 10px; text-align: center; white-space: normal; max-width: 100%; }
     .hero__stat + .hero__stat {
         border-left: 1px solid rgba(255,255,255,0.15);
