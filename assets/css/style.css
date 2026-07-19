@@ -1833,29 +1833,73 @@ ul { list-style: none; }
 /* ===== Cookie Banner ===== */
 .cookie-banner {
     position: fixed;
-    bottom: 24px;
-    left: 24px;
-    bottom: max(24px, env(safe-area-inset-bottom));
-    left: max(24px, env(safe-area-inset-left));
-    max-width: 420px;
+    bottom: max(16px, env(safe-area-inset-bottom));
+    left: 50%;
+    transform: translate(-50%, 120%);
+    width: min(420px, calc(100vw - 16px));
+    max-width: calc(100vw - 16px);
     background: var(--white);
-    border-radius: var(--r-md);
+    border-radius: 16px;
     box-shadow: var(--shadow-xl);
-    padding: 24px;
+    padding: 20px 18px;
     z-index: 950;
-    transform: translateY(120%);
     transition: transform var(--t-base);
+    box-sizing: border-box;
+    overflow: hidden;
 }
-.cookie-banner.is-visible { transform: translateY(0); }
+.cookie-banner.is-visible { transform: translate(-50%, 0); }
+.cookie-banner__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
 .cookie-banner__inner p {
     font-size: 13px;
     color: var(--gray-600);
-    margin-bottom: 16px;
     line-height: 1.5;
+    margin: 0;
+    text-align: center;
 }
 .cookie-banner__inner a { color: var(--cyan-600); }
 .cookie-banner__actions {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 8px;
+    flex-wrap: wrap;
+    width: 100%;
 }
-.cookie-banner__actions .btn { flex: 1; }
+.cookie-banner__actions .btn {
+    flex: 1 1 140px;
+    max-width: 180px;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .cookie-banner {
+        width: calc(100vw - 12px);
+        max-width: calc(100vw - 12px);
+        padding: 16px 14px;
+        bottom: max(8px, env(safe-area-inset-bottom));
+        border-radius: 14px;
+    }
+    .cookie-banner__inner {
+        gap: 12px;
+    }
+    .cookie-banner__inner p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .cookie-banner__actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+    .cookie-banner__actions .btn {
+        flex: 1 1 auto;
+        max-width: none;
+        width: 100%;
+        justify-content: center;
+    }
+}
