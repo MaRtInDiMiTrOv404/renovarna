@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="СтроителВарна - професионални ремонтни дейности в област Варна. Покриви, фасади, хидроизолации, метални конструкции, климатизация. 18 години опит.">
+    <meta name="keywords" content="ремонт Варна, строителство Варна, покриви, фасади, хидроизолация, климатизация">
+    <meta name="author" content="СтроителВарна">
+    <meta property="og:title" content="СтроителВарна - Ремонтни дейности в област Варна">
+    <meta property="og:description" content="18 години опит в ремонтите и строителството. Иновативни решения за вашия дом и бизнес.">
+    <meta property="og:type" content="website">
+    <title>СтроителВарна | Ремонтни дейности в област Варна – Иновации и Традиция</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="container topbar__inner">
+            <div class="topbar__info">
+                <a href="tel:0884757685" class="topbar__item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    0884 75 76 85
+                </a>
+                <a href="mailto:info@stroitelvarna.bg" class="topbar__item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    info@stroitelvarna.bg
+                </a>
+                <span class="topbar__item topbar__item--muted">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    гр. Варна, Промишлена зона, ул. "Строител" 18
+                </span>
+            </div>
+            <div class="topbar__actions">
+                <div class="lang-switcher">
+                    <button class="lang-switcher__btn is-active" data-lang="bg">BG</button>
+                    <button class="lang-switcher__btn" data-lang="en">EN</button>
+                    <button class="lang-switcher__btn" data-lang="ru">RU</button>
+                </div>
+                <div class="topbar__socials">
+                    <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zM12 16a4 4 0 110-8 4 4 0 010 8zm6.41-10.85a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg></a>
+                    <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3.02 3.02 0 00-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.51A3.02 3.02 0 00.5 6.2C0 8.08 0 12 0 12s0 3.92.5 5.8a3.02 3.02 0 002.12 2.14c1.88.51 9.38.51 9.38.51s7.5 0 9.38-.51a3.02 3.02 0 002.12-2.14C24 15.92 24 12 24 12s0-3.92-.5-5.8zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#" class="logo">
+                <div class="logo__mark">
+                    <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#00AEEF"/>
+                                <stop offset="100%" stop-color="#0F2A44"/>
+                            </linearGradient>
+                        </defs>
+                        <path d="M8 32 L30 10 L52 32 L46 32 L46 52 L14 52 L14 32 Z" 
+                              fill="url(#logoGrad)" stroke="#00AEEF" stroke-width="1.5" stroke-linejoin="round"/>
+                        <rect x="22" y="36" width="6" height="16" fill="#fff" opacity="0.95"/>
+                        <rect x="32" y="36" width="6" height="10" fill="#fff" opacity="0.95"/>
+                        <rect x="32" y="48" width="6" height="4" fill="#fff" opacity="0.95"/>
+                    </svg>
+                </div>
+                <div class="logo__text">
+                    <span class="logo__title">СТРОИТЕЛ<span class="logo__accent">ВАРНА</span></span>
+                    <span class="logo__tagline">РЕМОНТНИ ДЕЙНОСТИ · ОБЛАСТ ВАРНА</span>
+                </div>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav__link is-active">Начало</a></li>
+                <li><a href="#services" class="nav__link">Услуги</a></li>
+                <li><a href="#process" class="nav__link">Процес</a></li>
+                <li><a href="#projects" class="nav__link">Проекти</a></li>
+                <li><a href="#testimonials" class="nav__link">Отзиви</a></li>
+                <li><a href="#contacts" class="nav__link">Контакти</a></li>
+            </ul>
+
+            <div class="header__actions">
+                <a href="#quote" class="btn btn--primary">
+                    <span>Безплатна оферта</span>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 5l7 7-7 7v-4H3v-6h11V5z"/></svg>
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Меню" aria-expanded="false" aria-controls="mobileMenu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile menu drawer (slides from LEFT) -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu__header">
+            <a href="#hero" class="mobile-menu__brand">
+                <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" class="mobile-menu__brand-mark">
+                    <path d="M8 32 L30 10 L52 32 L46 32 L46 52 L14 52 L14 32 Z" 
+                          fill="#00AEEF" stroke="#00AEEF" stroke-width="1.5" stroke-linejoin="round"/>
+                    <rect x="22" y="36" width="6" height="16" fill="#fff"/>
+                    <rect x="32" y="36" width="6" height="10" fill="#fff"/>
+                    <rect x="32" y="48" width="6" height="4" fill="#fff"/>
+                </svg>
+                <span class="mobile-menu__brand-text">СТРОИТЕЛ<span style="color:#00AEEF">ВАРНА</span></span>
+            </a>
+            <button class="mobile-menu__close" id="mobileMenuClose" aria-label="Затвори менюто">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+            </button>
+        </div>
+        <ul class="mobile-menu__list">
+            <li><a href="#hero" class="mobile-menu__link">Начало</a></li>
+            <li><a href="#services" class="mobile-menu__link">Услуги</a></li>
+            <li><a href="#process" class="mobile-menu__link">Процес</a></li>
+            <li><a href="#projects" class="mobile-menu__link">Проекти</a></li>
+            <li><a href="#testimonials" class="mobile-menu__link">Отзиви</a></li>
+            <li><a href="#contacts" class="mobile-menu__link">Контакти</a></li>
+        </ul>
+        <div class="mobile-menu__footer">
+            <a href="tel:0884757685" class="mobile-menu__phone">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                <span>0884 75 76 85</span>
+            </a>
+            <a href="#quote" class="btn btn--primary btn--block">
+                <span>Безплатна оферта</span>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 5l7 7-7 7v-4H3v-6h11V5z"/></svg>
+            </a>
+        </div>
+    </div>
+    <div class="mobile-menu__backdrop" id="mobileMenuBackdrop"></div>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <div class="hero__bg-layer hero__bg-layer--sky"></div>
+            <div class="hero__bg-layer hero__bg-layer--building">
+                <svg viewBox="0 0 1440 600" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="bldGrad" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#0F2A44" stop-opacity="0.7"/>
+                            <stop offset="100%" stop-color="#0F2A44" stop-opacity="0.95"/>
+                        </linearGradient>
+                    </defs>
+                    <!-- City skyline silhouette -->
+                    <path d="M0 600 L0 420 L80 420 L80 350 L150 350 L150 380 L220 380 L220 280 L290 280 L290 320 L360 320 L360 240 L440 240 L440 280 L510 280 L510 200 L590 200 L590 260 L670 260 L670 220 L760 220 L760 290 L840 290 L840 250 L920 250 L920 320 L1010 320 L1010 270 L1090 270 L1090 340 L1180 340 L1180 300 L1270 300 L1270 360 L1360 360 L1360 400 L1440 400 L1440 600 Z" 
+                          fill="url(#bldGrad)"/>
+                    <!-- Windows lights -->
+                    <g fill="#FFD580" opacity="0.85">
+                        <rect x="100" y="370" width="6" height="8"/>
+                        <rect x="120" y="370" width="6" height="8"/>
+                        <rect x="100" y="390" width="6" height="8"/>
+                        <rect x="240" y="300" width="6" height="8"/>
+                        <rect x="260" y="300" width="6" height="8"/>
+                        <rect x="240" y="320" width="6" height="8"/>
+                        <rect x="380" y="260" width="6" height="8"/>
+                        <rect x="400" y="260" width="6" height="8"/>
+                        <rect x="530" y="220" width="6" height="8"/>
+                        <rect x="550" y="220" width="6" height="8"/>
+                        <rect x="530" y="240" width="6" height="8"/>
+                        <rect x="690" y="240" width="6" height="8"/>
+                        <rect x="780" y="310" width="6" height="8"/>
+                        <rect x="800" y="310" width="6" height="8"/>
+                        <rect x="940" y="340" width="6" height="8"/>
+                        <rect x="960" y="340" width="6" height="8"/>
+                        <rect x="1030" y="290" width="6" height="8"/>
+                        <rect x="1110" y="360" width="6" height="8"/>
+                        <rect x="1200" y="320" width="6" height="8"/>
+                        <rect x="1290" y="380" width="6" height="8"/>
+                    </g>
+                </svg>
+            </div>
+            <div class="hero__bg-layer hero__bg-overlay"></div>
+            <div class="hero__particles" id="heroParticles"></div>
+        </div>
+
+        <div class="container hero__content">
+            <div class="hero__text">
+                <div class="hero__badge">
+                    <span class="hero__badge-pulse"></span>
+                    <span>Активен в област Варна от 2007 г.</span>
+                </div>
+                <h1 class="hero__title">
+                    <span class="hero__title-line">Строим</span>
+                    <span class="hero__title-line hero__title-line--accent">доверие,</span>
+                    <span class="hero__title-line">ремонтираме</span>
+                    <span class="hero__title-line hero__title-line--outline">с качество.</span>
+                </h1>
+                <p class="hero__subtitle">
+                    18 години опит в пълни ремонти, покривни системи, фасади, хидроизолации 
+                    и иновативни енергоефективни решения за дома и бизнеса във Варна и региона. 
+                    Гаранция до 10 години върху всяка изпълнена дейност.
+                </p>
+                <div class="hero__actions">
+                    <a href="#quote" class="btn btn--primary btn--large">
+                        <span>Заявете безплатна оферта</span>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 5l7 7-7 7v-4H3v-6h11V5z"/></svg>
+                    </a>
+                    <a href="#projects" class="btn btn--ghost btn--large">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        <span>Вижте проекти</span>
+                    </a>
+                </div>
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number" data-count="850">0</span>
+                        <span class="hero__stat-label">Завършени проекта</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number" data-count="18">0</span>
+                        <span class="hero__stat-label">Години опит</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number" data-count="98">0</span>
+                        <span class="hero__stat-suffix">%</span>
+                        <span class="hero__stat-label">Доволни клиенти</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number" data-count="10">0</span>
+                        <span class="hero__stat-suffix">г.</span>
+                        <span class="hero__stat-label">Максимална гаранция</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__scroll">
+            <span>Скролни надолу</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trustbar">
+        <div class="container">
+            <div class="trustbar__inner">
+                <div class="trustbar__item">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                    <div>
+                        <strong>Лицензиран строител</strong>
+                        <span>Сертификат № 2014-0421</span>
+                    </div>
+                </div>
+                <div class="trustbar__item">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <div>
+                        <strong>Гаранция до 10 години</strong>
+                        <span>Писмена гаранция за всяка дейност</span>
+                    </div>
+                </div>
+                <div class="trustbar__item">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                    <div>
+                        <strong>Застраховка 1 000 000 лв.</strong>
+                        <span>Застраховка отговорност</span>
+                    </div>
+                </div>
+                <div class="trustbar__item">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    <div>
+                        <strong>Безплатен оглед</strong>
+                        <span>В целия регион на Варна</span>
+                    </div>
+                </div>
+                <div class="trustbar__item">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                    <div>
+                        <strong>Спазване на сроковете</strong>
+                        <span>Договор + гаранция за дата</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-head__tag">Нашите услуги</span>
+                <h2 class="section-head__title">Пълна гама ремонтни и строителни дейности</h2>
+                <p class="section-head__desc">
+                    От покривни системи до пълни ремонти "на ключ" – работим със сертифицирани материали 
+                    и доказани технологии. Всяка услуга е подкрепена с писмена гаранция и технически контрол.
+                </p>
+            </div>
+
+            <div class="services__grid">
+                <article class="service-card" data-category="roofing">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 32 L32 8 L60 32"/>
+                            <path d="M10 32 L10 56 L54 56 L54 32"/>
+                            <path d="M24 56 L24 38 L40 38 L40 56"/>
+                            <line x1="32" y1="8" x2="32" y2="2"/>
+                            <path d="M28 5 L36 5"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Покривни системи</h3>
+                    <p class="service-card__desc">
+                        Клик профил "винкел фалц", битумни шиндли, термопанели, покривни прозорци VELUX. 
+                        Пълна реконструкция или нов монтаж с гаранция до 15 г.
+                    </p>
+                    <ul class="service-card__features">
+                        <li>Винкел фалц системи</li>
+                        <li>Битумни шиндли</li>
+                        <li>Метални керемиди</li>
+                        <li>Покривни прозорци VELUX</li>
+                    </ul>
+                    <a href="#quote" class="service-card__link">
+                        <span>Заявете оглед</span>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 5l7 7-7 7v-4H3v-6h11V5z"/></svg>
+                    </a>
+                </article>
+
+                <article class="service-card" data-category="facade">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="8" y="6" width="48" height="52"/>
+                            <line x1="20" y1="6" x2="20" y2="58"/>
+                            <line x1="44" y1="6" x2="44" y2="58"/>
+                            <line x1="8" y1="20" x2="56" y2="20"/>
+                            <line x1="8" y1="32" x2="56" y2="32"/>
+                            <line x1="8" y1="44" x2="56" y2="44"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Фасадни решения</h3>
+                    <p class="service-card__desc">
+                        Термопанели, минерална мазилка, вентилирани фасади, декоративни елементи. 
+                        Енергоефективни системи с намаляване на разходите до 40%.
+                    </p>
+                    <ul class="service-card__features">
+                        <li>ETICS термопанели</li>
+                        <li>Вентилирани фасади</li>
+                        <li>Минерална мазилка</li>
+                        <li>SATE термомодули</li>
+                    </ul>
+                    <a href="#quote" class="service-card__link">
+                        <span>Заявете оглед</span>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 5l7 7-7 7v-4H3v-6h11V5z"/></svg>
+                    </a>
+                </article>
+
+                <article class="service-card" data-category="waterproofing">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M32 4 C32 4 14 22 14 36 C14 47 22 56 32 56 C42 56 50 47 50 36 C50 22 32 4 32 4 Z"/>
+                            <path d="M22 36 C22 41 26 45 30 45" stroke-dasharray="2 3"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Хидроизолации</h3>
+                    <p class="service-card__desc">
+                        Хидроизолация на покриви, тераси, санитарни помещения, подземни гаражи и фундаменти. 
+                        Битумни мембрани, полиуретанови системи, течни мембрани.
+                    </p>
+                    <ul class="service-card__features">
+                        <li>Битумни мембрани</li>
+                        <li>Полиуретанови системи</li>
+                        <li>Течни мембрани</li>
+                        <li>Хидроизолация на басейни</li>
+                    </ul>
+                    <a href="#quote" class="service-card__link">
+                        <span>Заявете оглед</span>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 5l7 7-7 7v-4H3v-6h11V5z"/></svg>
+                    </a>
+                </article>
+
+                <article class="service-card" data-category="metal">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10 54 L10 24 L24 10 L38 24 L52 10 L52 54"/>
+                            <path d="M10 54 L54 54"/>
+                            <path d="M20 54 L20 38 L28 38 L28 54"/>
+                            <path d="M36 54 L36 30 L44 30 L44 54"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Метални конструкции</h3>
+                    <p class="service-card__desc">
+                        Производство и монтаж на метални конструкции за складове, навеси, паркове. 
+                        Цялостно инженерно проектиране и статичен расчет.
+                    </p>
+                    <ul class="service-card__features">
+                        <li>Индустриални хали</li>
+                        <li>Паркинг навеси</li>
+                        <li>Стълбища и парапети</li>
+                        <li>Антени и подпорни стени</li>
+                    </ul>
+                    <a href="#quote" class="service-card__link">
+                        <span>Заявете оглед</span>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 5l7 7-7 7v-4H3v-6h11V5z"/></svg>
+                    </a>
+                </article>
+
+                <article class="service-card" data-category="hvac">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="6" y="20" width="38" height="22" rx="2"/>
+                            <line x1="14" y1="20" x2="14" y2="42"/>
+                            <line x1="22" y1="20" x2="22" y2="42"/>
+                            <line x1="30" y1="20" x2="30" y2="42"/>
+                            <path d="M44 28 L54 28 L54 36 L60 36"/>
+                            <circle cx="32" cy="54" r="6"/>
+                            <path d="M32 50 L32 54 L35 56"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">ОВК и климатизация</h3>
+                    <p class="service-card__desc">
+                        VRF системи GREE, подово отопление UPONOR, вентилационни инсталации. 
+                        Проектиране, доставка, монтаж и поддръжка "на ключ".
+                    </p>
+                    <ul class="service-card__features">
+                        <li>VRF климатизация GREE</li>
+                        <li>Подово отопление UPONOR</li>
+                        <li>Вентилационни системи</li>
+                        <li>Сервиз и поддръжка</li>
+                    </ul>
+                    <a href="#quote" class="service-card__link">
+                        <span>Заявете оглед</span>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 5l7 7-7 7v-4H3v-6h11V5z"/></svg>
+                    </a>
+                </article>
+
+                <article class="service-card" data-category="interior">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 56 L8 12 L56 12 L56 56"/>
+                            <rect x="16" y="20" width="14" height="14"/>
+                            <rect x="36" y="20" width="12" height="22"/>
+                            <line x1="8" y1="40" x2="56" y2="40"/>
+                            <line x1="32" y1="20" x2="32" y2="56"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Пълни ремонти "на ключ"</h3>
+                    <p class="service-card__desc">
+                        Апартаменти, къщи, офиси и търговски площи. От демонтаж до заселване – 
+                        цялостна координация на екипите и контрол на качеството.
+                    </p>
+                    <ul class="service-card__features">
+                        <li>Дизайн и 3D визуализация</li>
+                        <li>Строително-монтажни работи</li>
+                        <li>Електро и ВиК инсталации</li>
+                        <li>Заселване "на ключ"</li>
+                    </ul>
+                    <a href="#quote" class="service-card__link">
+                        <span>Заявете оглед</span>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 5l7 7-7 7v-4H3v-6h11V5z"/></svg>
+                    </a>
+                </article>
+
+                <article class="service-card" data-category="renovation">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M52 8 L56 12 L24 44 L18 46 L20 40 L52 8 Z"/>
+                            <path d="M44 16 L48 20"/>
+                            <path d="M8 56 L8 50 L14 50 L14 56 Z"/>
+                            <line x1="8" y1="56" x2="56" y2="56"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Мокри и сухи строителни работи</h3>
+                    <p class="service-card__desc">
+                        Зидария, мазалки, гипсокартон, облицовки, малтиране. Всички видове 
+                        предварителни и довършителни работи за ново строителство и рехабилитация.
+                    </p>
+                    <ul class="service-card__features">
+                        <li>Тухло- и газобетонна зидария</li>
+                        <li>Машинна мазилка PFT</li>
+                        <li>Гипсокартон KNAUF</li>
+                        <li>Керамични и каменни облицовки</li>
+                    </ul>
+                    <a href="#quote" class="service-card__link">
+                        <span>Заявете оглед</span>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 5l7 7-7 7v-4H3v-6h11V5z"/></svg>
+                    </a>
+                </article>
+
+                <article class="service-card" data-category="emergency">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M32 4 L32 14"/>
+                            <path d="M14 22 C14 14 22 8 32 8 C42 8 50 14 50 22 L50 38 L56 46 L8 46 L14 38 Z"/>
+                            <path d="M26 50 C26 54 29 58 32 58 C35 58 38 54 38 50"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Спешна помощ 24/7</h3>
+                    <p class="service-card__desc">
+                        Аварийни намеси при течове, спукани тръби, повреди от буря. 
+                        Екип на разположение 24/7 в целия регион на Варна и околностите.
+                    </p>
+                    <ul class="service-card__features">
+                        <li>Авариен екип 24/7</li>
+                        <li>Реакция до 60 минути</li>
+                        <li>Временни ремонти</li>
+                        <li>Застрахователна експертиза</li>
+                    </ul>
+                    <a href="tel:0884757685" class="service-card__link service-card__link--urgent">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        <span>0884 75 76 85</span>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <span class="section-head__tag">Как работим</span>
+                <h2 class="section-head__title">Прозрачен процес от първото обаждане до заселването</h2>
+                <p class="section-head__desc">
+                    Следваме изпитан метод в 5 стъпки – без изненади, без скрити такси, без компромиси с качеството.
+                </p>
+            </div>
+
+            <div class="process__timeline">
+                <div class="process__line"></div>
+                
+                <div class="process__step">
+                    <div class="process__number">01</div>
+                    <div class="process__content">
+                        <h3>Безплатен оглед и консултация</h3>
+                        <p>Пристигаме на обекта в удобно за вас време, правим пълен оглед, снимаме и измерваме. Обсъждаме вашите нужди и бюджет.</p>
+                        <span class="process__duration">1–2 дни от запитване</span>
+                    </div>
+                </div>
+
+                <div class="process__step">
+                    <div class="process__number">02</div>
+                    <div class="process__content">
+                        <h3>Оферта с ценообразуване по артикули</h3>
+                        <p>Получавате детайлна оферта с разбивка по вида работи, количество, единична цена и материали. Без скрити такси и без "изненади" по пътя.</p>
+                        <span class="process__duration">2–3 дни след огледа</span>
+                    </div>
+                </div>
+
+                <div class="process__step">
+                    <div class="process__number">03</div>
+                    <div class="process__content">
+                        <h3>Договор и график на изпълнението</h3>
+                        <p>Сключваме писмен договор с ясен график, дата на завършване и гаранции. Предварително уточняваме кои дни ще се работи и кои материали ще се ползват.</p>
+                        <span class="process__duration">3–5 дни след офертата</span>
+                    </div>
+                </div>
+
+                <div class="process__step">
+                    <div class="process__number">04</div>
+                    <div class="process__content">
+                        <h3>Изпълнение с технически контрол</h3>
+                        <p>Работим само с квалифицирани екипи и сертифицирани материали. Седмичен контрол на качеството и фото-доклад до вас след всеки етап.</p>
+                        <span class="process__duration">според обема</span>
+                    </div>
+                </div>
+
+                <div class="process__step">
+                    <div class="process__number">05</div>
+                    <div class="process__content">
+                        <h3>Предаване, гаранция и поддръжка</h3>
+                        <p>Официално предаване с протокол, писмена гаранция и онлайн тракинг за бъдещи въпроси. Безплатен оглед след 12 месеца.</p>
+                        <span class="process__duration">1 ден + гаранция до 10 г.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-head section-head--between">
+                <div>
+                    <span class="section-head__tag">Нашите проекти</span>
+                    <h2 class="section-head__title">Реални обекти. Реални резултати.</h2>
+                </div>
+                <div class="projects__filters">
+                    <button class="filter-btn is-active" data-filter="all">Всички</button>
+                    <button class="filter-btn" data-filter="roofing">Покриви</button>
+                    <button class="filter-btn" data-filter="facade">Фасади</button>
+                    <button class="filter-btn" data-filter="interior">Вътрешни</button>
+                    <button class="filter-btn" data-filter="commercial">Бизнес</button>
+                </div>
+            </div>
+
+            <div class="projects__grid" id="projectsGrid">
+                <!-- Project cards injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Before / After -->
+    <section class="before-after">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <span class="section-head__tag">Преди / След</span>
+                <h2 class="section-head__title">Вижте разликата с едно плъзгане</h2>
+                <p class="section-head__desc">
+                    Интерактивно сравнение на обект преди и след нашия ремонт. Двигателят се плъзга наляво-надясно.
+                </p>
+            </div>
+
+            <div class="ba-slider" id="baSlider">
+                <div class="ba-slider__img ba-slider__img--before">
+                    <div class="ba-slider__placeholder ba-slider__placeholder--before">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                            <rect width="400" height="300" fill="#5a6b7e"/>
+                            <rect x="40" y="80" width="120" height="160" fill="#4a5560" stroke="#2c3640" stroke-width="2"/>
+                            <rect x="240" y="80" width="120" height="160" fill="#4a5560" stroke="#2c3640" stroke-width="2"/>
+                            <rect x="50" y="90" width="40" height="40" fill="#2c3640"/>
+                            <rect x="110" y="90" width="40" height="40" fill="#2c3640"/>
+                            <rect x="250" y="90" width="40" height="40" fill="#2c3640"/>
+                            <rect x="310" y="90" width="40" height="40" fill="#2c3640"/>
+                            <rect x="180" y="180" width="40" height="60" fill="#3a4550"/>
+                            <path d="M0 240 L400 240" stroke="#3a4550" stroke-width="4" stroke-dasharray="8 4"/>
+                            <text x="200" y="40" text-anchor="middle" fill="#fff" font-family="Montserrat" font-size="20" font-weight="700">ПРЕДИ</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="ba-slider__img ba-slider__img--after">
+                    <div class="ba-slider__placeholder ba-slider__placeholder--after">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                            <defs>
+                                <linearGradient id="wallAfter" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#FAF7F2"/>
+                                    <stop offset="100%" stop-color="#E8DCC4"/>
+                                </linearGradient>
+                            </defs>
+                            <rect width="400" height="300" fill="url(#wallAfter)"/>
+                            <rect x="40" y="80" width="120" height="160" fill="#fff" stroke="#d4c5a0" stroke-width="2"/>
+                            <rect x="240" y="80" width="120" height="160" fill="#fff" stroke="#d4c5a0" stroke-width="2"/>
+                            <rect x="50" y="90" width="40" height="40" fill="#A8D5E2" stroke="#00AEEF" stroke-width="1"/>
+                            <rect x="110" y="90" width="40" height="40" fill="#A8D5E2" stroke="#00AEEF" stroke-width="1"/>
+                            <rect x="250" y="90" width="40" height="40" fill="#A8D5E2" stroke="#00AEEF" stroke-width="1"/>
+                            <rect x="310" y="90" width="40" height="40" fill="#A8D5E2" stroke="#00AEEF" stroke-width="1"/>
+                            <rect x="180" y="180" width="40" height="60" fill="#8B6F47"/>
+                            <rect x="0" y="240" width="400" height="60" fill="#8B6F47"/>
+                            <rect x="0" y="240" width="400" height="6" fill="#6b5535"/>
+                            <text x="200" y="40" text-anchor="middle" fill="#0F2A44" font-family="Montserrat" font-size="20" font-weight="800">СЛЕД</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="ba-slider__handle" id="baHandle">
+                    <div class="ba-slider__handle-line"></div>
+                    <div class="ba-slider__handle-circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z M16 5v14l11-7z" transform="scale(0.7) translate(-2 0)"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <span class="section-head__tag">Отзиви</span>
+                <h2 class="section-head__title">Какво казват клиентите ни</h2>
+                <p class="section-head__desc">
+                    Над 850 завършени проекта в област Варна. Ето някои от хората, които ни се довериха.
+                </p>
+            </div>
+
+            <div class="testimonials__grid">
+                <article class="testimonial">
+                    <div class="testimonial__stars">★★★★★</div>
+                    <p class="testimonial__quote">
+                        "Ремонтираха ни покрива на къщата в Кривня. Изборът на материали беше професионален, 
+                        сроковете спазени до ден, а цената – точно според офертата. Без изненади."
+                    </p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">МП</div>
+                        <div>
+                            <strong>Мария Петрова</strong>
+                            <span>Кривня, област Варна · Покривна система</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial">
+                    <div class="testimonial__stars">★★★★★</div>
+                    <p class="testimonial__quote">
+                        "Пълен ремонт на апартамента ни във Владиславово. От дизайнерската концепция до 
+                        финалното почистване – всичко беше на ниво. Заселихме се в уговорения ден."
+                    </p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">ДК</div>
+                        <div>
+                            <strong>Димитър Костов</strong>
+                            <span>Варна, ж.к. Владиславово · Пълен ремонт</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial">
+                    <div class="testimonial__stars">★★★★★</div>
+                    <p class="testimonial__quote">
+                        "Изградиха ни вентилирана фасада на офис сградата в гр. Девня. Професионален екип, 
+                        коректно отношение и качество, което се вижда. Препоръчвам!"
+                    </p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">СИ</div>
+                        <div>
+                            <strong>Стоян Иванов</strong>
+                            <span>Девня · Фасадна изолация бизнес сграда</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial">
+                    <div class="testimonial__stars">★★★★★</div>
+                    <p class="testimonial__quote">
+                        "Авариен през нощта заради спукана тръба – дойдоха за 40 минути. Професионална намеса, 
+                        коректна цена. Сега сме техни редовни клиенти за поддръжката на сградата."
+                    </p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">ЕР</div>
+                        <div>
+                            <strong>Елена Радева</strong>
+                            <span>Варна, центръм · Аварийна ВиК намеса</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial">
+                    <div class="testimonial__stars">★★★★★</div>
+                    <p class="testimonial__quote">
+                        "Хидроизолация на тераса в Аспарухово. Бяхме имали течове три пъти преди това с други изпълнители. 
+                        Минаха 2 години – нито капка. Най-после спокойствие."
+                    </p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">НД</div>
+                        <div>
+                            <strong>Николай Димитров</strong>
+                            <span>Варна, Аспарухово · Хидроизолация тераса</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial">
+                    <div class="testimonial__stars">★★★★★</div>
+                    <p class="testimonial__quote">
+                        "Метална конструкция за навес на паркинга ни в Аксаково. Изпълнението беше бързо, 
+                        чисто и много здраво. Инженерното проектиране беше на много високо ниво."
+                    </p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">ГТ</div>
+                        <div>
+                            <strong>Георги Тодоров</strong>
+                            <span>Аксаково · Метална конструкция</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="testimonials__summary">
+                <div class="rating-summary">
+                    <div class="rating-summary__score">4.9<span>/5</span></div>
+                    <div class="rating-summary__stars">★★★★★</div>
+                    <div class="rating-summary__text">Въз основа на 247 отзива<br>в Google, Facebook и нашия сайт</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="partners">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <span class="section-head__tag">Партньори и сертификати</span>
+                <h2 class="section-head__title">Работим само с най-добрите марки</h2>
+            </div>
+            <div class="partners__grid">
+                <div class="partner"><span>UPONOR</span><small>Официален партньор</small></div>
+                <div class="partner"><span>GREE</span><small>Авторизиран дилър</small></div>
+                <div class="partner"><span>VELUX</span><small>Сертифициран монтаж</small></div>
+                <div class="partner"><span>FAKRO</span><small>Официален партньор</small></div>
+                <div class="partner"><span>KNAUF</span><small>Системен партньор</small></div>
+                <div class="partner"><span>ISO 9001</span><small>Сертифициран процес</small></div>
+                <div class="partner"><span>СБЦ</span><small>Член на Съюза</small></div>
+                <div class="partner"><span>BAUHAUS</span><small>Корпоративен клиент</small></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form -->
+    <section class="quote" id="quote">
+        <div class="container">
+            <div class="quote__wrap">
+                <div class="quote__info">
+                    <span class="section-head__tag">Заявете оферта</span>
+                    <h2 class="section-head__title">Готови ли сте да започнем?</h2>
+                    <p class="quote__desc">
+                        Попълнете формата и ще се свържем с вас в рамките на 24 часа за безплатен оглед 
+                        и консултация на обекта в област Варна.
+                    </p>
+                    <div class="quote__contacts">
+                        <a href="tel:0884757685" class="quote__contact">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            <div>
+                                <small>Телефон</small>
+                                <strong>0884 75 76 85</strong>
+                            </div>
+                        </a>
+                        <a href="mailto:info@stroitelvarna.bg" class="quote__contact">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            <div>
+                                <small>Имейл</small>
+                                <strong>info@stroitelvarna.bg</strong>
+                            </div>
+                        </a>
+                        <div class="quote__contact">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            <div>
+                                <small>Адрес</small>
+                                <strong>гр. Варна, ул. "Строител" 18</strong>
+                            </div>
+                        </div>
+                        <div class="quote__contact">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                            <div>
+                                <small>Работно време</small>
+                                <strong>Пн–Пт 08:00–18:00 · Съб 09:00–14:00</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="quote__form" id="quoteForm">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="qName">Име *</label>
+                            <input type="text" id="qName" required placeholder="Вашето име">
+                        </div>
+                        <div class="form-field">
+                            <label for="qPhone">Телефон *</label>
+                            <input type="tel" id="qPhone" required placeholder="0884 00 00 00">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="qEmail">Имейл</label>
+                            <input type="email" id="qEmail" placeholder="ivan@example.bg">
+                        </div>
+                        <div class="form-field">
+                            <label for="qLocation">Населено място *</label>
+                            <input type="text" id="qLocation" required placeholder="Варна, Аксаково, Девня...">
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="qService">Вид услуга *</label>
+                        <select id="qService" required>
+                            <option value="">Изберете услуга...</option>
+                            <option>Покривна система</option>
+                            <option>Фасадна изолация</option>
+                            <option>Хидроизолация</option>
+                            <option>Метална конструкция</option>
+                            <option>ОВК и климатизация</option>
+                            <option>Пълен ремонт на ключ</option>
+                            <option>Баня или кухня на ключ</option>
+                            <option>Аварийна намеса</option>
+                            <option>Друго</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="qMessage">Описание на проекта</label>
+                        <textarea id="qMessage" rows="4" placeholder="Кратко описание на това, което искате да се направи..."></textarea>
+                    </div>
+                    <label class="form-consent">
+                        <input type="checkbox" required>
+                        <span>Съгласен съм с обработката на личните ми данни съгласно Политиката за поверителност (GDPR).</span>
+                    </label>
+                    <button type="submit" class="btn btn--primary btn--block btn--large">
+                        <span>Изпратете запитване</span>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                    </button>
+                    <p class="form-success" id="formSuccess">
+                        ✓ Благодаря! Запитването ви е прието. Ще се свържем с вас в рамките на 24 часа.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="map" id="map">
+        <div class="map__wrap">
+            <iframe 
+                src="https://maps.google.com/maps?q=Varna,Bulgaria&z=11&output=embed" 
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade" title="Карта на района на обслужване"></iframe>
+            <div class="map__overlay">
+                <h3>Региони на обслужване</h3>
+                <ul>
+                    <li>Варна и всички квартали</li>
+                    <li>Аксаково, Девня, Провадия</li>
+                    <li>Златни пясъци, Св. Константин</li>
+                    <li>Бяла, Долни Чифлик, Аврен</li>
+                    <li>Цяла област Варна</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Strip -->
+    <section class="cta-strip">
+        <div class="container">
+            <div class="cta-strip__inner">
+                <div>
+                    <h2>Имате проект наум?</h2>
+                    <p>Започнете с безплатен оглед и консултация в област Варна.</p>
+                </div>
+                <a href="tel:0884757685" class="btn btn--white btn--large">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    <span>0884 75 76 85</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__col footer__col--brand">
+                    <a href="#" class="logo logo--light">
+                        <div class="logo__mark">
+                            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 32 L30 10 L52 32 L46 32 L46 52 L14 52 L14 32 Z" 
+                                      fill="#00AEEF" stroke="#00AEEF" stroke-width="1.5" stroke-linejoin="round"/>
+                                <rect x="22" y="36" width="6" height="16" fill="#fff"/>
+                                <rect x="32" y="36" width="6" height="10" fill="#fff"/>
+                                <rect x="32" y="48" width="6" height="4" fill="#fff"/>
+                            </svg>
+                        </div>
+                        <div class="logo__text">
+                            <span class="logo__title">СТРОИТЕЛ<span class="logo__accent">ВАРНА</span></span>
+                            <span class="logo__tagline">РЕМОНТНИ ДЕЙНОСТИ · ОБЛАСТ ВАРНА</span>
+                        </div>
+                    </a>
+                    <p class="footer__about">
+                        18 години опит в ремонтни дейности и строителство в област Варна. 
+                        Иновативни решения, сертифицирани материали и гарантирано качество.
+                    </p>
+                    <div class="footer__socials">
+                        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
+                        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zM12 16a4 4 0 110-8 4 4 0 010 8zm6.41-10.85a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg></a>
+                        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3.02 3.02 0 00-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.51A3.02 3.02 0 00.5 6.2C0 8.08 0 12 0 12s0 3.92.5 5.8a3.02 3.02 0 002.12 2.14c1.88.51 9.38.51 9.38.51s7.5 0 9.38-.51a3.02 3.02 0 002.12-2.14C24 15.92 24 12 24 12s0-3.92-.5-5.8zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="#services">Покривни системи</a></li>
+                        <li><a href="#services">Фасадни решения</a></li>
+                        <li><a href="#services">Хидроизолации</a></li>
+                        <li><a href="#services">Метални конструкции</a></li>
+                        <li><a href="#services">ОВК и климатизация</a></li>
+                        <li><a href="#services">Пълни ремонти на ключ</a></li>
+                        <li><a href="#services">Спешна помощ 24/7</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Компанията</h4>
+                    <ul>
+                        <li><a href="#hero">За нас</a></li>
+                        <li><a href="#process">Как работим</a></li>
+                        <li><a href="#projects">Проекти</a></li>
+                        <li><a href="#testimonials">Отзиви</a></li>
+                        <li><a href="#quote">Безплатна оферта</a></li>
+                        <li><a href="#">Политика за поверителност</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Контакти</h4>
+                    <ul class="footer__contacts">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            гр. Варна, Промишлена зона, ул. "Строител" 18
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            <a href="tel:0884757685">0884 75 76 85</a>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            <a href="mailto:info@stroitelvarna.bg">info@stroitelvarna.bg</a>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                            Пн–Пт 08:00–18:00, Съб 09:00–14:00
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container footer__bottom-inner">
+                <p>&copy; 2025 СтроителВарна ЕООД · Всички права запазени · ЕИК 204180975</p>
+                <p>Сайт с ❤ за област Варна · Иновации и традиция в строителството</p>
+            </div>
+            <div class="container">
+                <div class="footer__credit">
+                    <span>Изготвил:</span>
+                    <a href="https://martindimitrov404.github.io/AGN/" target="_blank" rel="noopener noreferrer">
+                        Мартин Генадиев Димитров
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Mobile CTA -->
+    <div class="floating-cta">
+        <a href="tel:0884757685" class="floating-cta__call" aria-label="Обадете се">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        </a>
+        <a href="#quote" class="floating-cta__quote">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+            <span>Оферта</span>
+        </a>
+    </div>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Нагоре">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg>
+    </button>
+
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-banner__inner">
+            <p>Използваме бисквитки за подобряване на вашето преживяване. Научете повече в <a href="#">Политиката за поверителност</a>.</p>
+            <div class="cookie-banner__actions">
+                <button class="btn btn--ghost btn--small" id="cookieDecline">Отказ</button>
+                <button class="btn btn--primary btn--small" id="cookieAccept">Приемам всички</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/gallery.js"></script>
+</body>
+</html>

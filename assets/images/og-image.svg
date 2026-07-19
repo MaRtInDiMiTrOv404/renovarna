@@ -1,0 +1,35 @@
+# OG Preview Image (SVG) for СтроителВарна
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#0F2A44"/>
+            <stop offset="100%" stop-color="#1a3a5c"/>
+        </linearGradient>
+        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#00AEEF"/>
+            <stop offset="100%" stop-color="#0F2A44"/>
+        </linearGradient>
+    </defs>
+    <rect width="1200" height="630" fill="url(#bg)"/>
+    <!-- City silhouette -->
+    <path d="M0 630 L0 480 L100 480 L100 420 L180 420 L180 460 L260 460 L260 380 L340 380 L340 420 L420 420 L420 350 L500 350 L500 400 L580 400 L580 370 L680 370 L680 430 L760 430 L760 400 L840 400 L840 460 L940 460 L940 420 L1020 420 L1020 480 L1100 480 L1100 510 L1200 510 L1200 630 Z" 
+          fill="#0a1f33" opacity="0.6"/>
+    <!-- Logo -->
+    <g transform="translate(80, 100)">
+        <path d="M0 70 L50 20 L100 70 L90 70 L90 130 L10 130 L10 70 Z" 
+              fill="url(#logoGrad)" stroke="#00AEEF" stroke-width="2" stroke-linejoin="round"/>
+        <rect x="32" y="80" width="12" height="50" fill="#fff"/>
+        <rect x="50" y="80" width="12" height="35" fill="#fff"/>
+        <rect x="50" y="118" width="12" height="12" fill="#fff"/>
+    </g>
+    <text x="200" y="160" font-family="Montserrat, Arial, sans-serif" font-size="56" font-weight="900" fill="#fff">СТРОИТЕЛ<tspan fill="#00AEEF">ВАРНА</tspan></text>
+    <text x="200" y="200" font-family="Inter, Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.6)" letter-spacing="2">РЕМОНТНИ ДЕЙНОСТИ · ОБЛАСТ ВАРНА</text>
+    <!-- Headline -->
+    <text x="80" y="350" font-family="Montserrat, Arial, sans-serif" font-size="72" font-weight="900" fill="#fff">Строим доверие,</text>
+    <text x="80" y="430" font-family="Montserrat, Arial, sans-serif" font-size="72" font-weight="900" font-style="italic" fill="#00AEEF">ремонтираме</text>
+    <text x="80" y="510" font-family="Montserrat, Arial, sans-serif" font-size="72" font-weight="900" fill="none" stroke="#fff" stroke-width="2">с качество.</text>
+    <!-- Badge -->
+    <rect x="80" y="540" width="280" height="40" rx="20" fill="rgba(0,174,239,0.15)" stroke="rgba(0,174,239,0.4)"/>
+    <circle cx="105" cy="560" r="5" fill="#00AEEF"/>
+    <text x="120" y="565" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#00AEEF">Активен в област Варна от 2007 г.</text>
+</svg>

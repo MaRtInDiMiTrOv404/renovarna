@@ -1,0 +1,186 @@
+/* ==================================================
+   СТРОИТЕЛВАРНА - ANIMATIONS
+   Scroll reveal, micro-interactions
+   ================================================== */
+
+/* Scroll reveal initial state */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: opacity, transform;
+}
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Directional reveals */
+.reveal--left { transform: translateX(-40px); }
+.reveal--right { transform: translateX(40px); }
+.reveal--scale { transform: scale(0.9); }
+.reveal--left.is-visible,
+.reveal--right.is-visible,
+.reveal--scale.is-visible { transform: translateX(0) scale(1); }
+
+/* Staggered children */
+.reveal--stagger > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal--stagger.is-visible > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+.reveal--stagger.is-visible > *:nth-child(1) { transition-delay: 0.05s; }
+.reveal--stagger.is-visible > *:nth-child(2) { transition-delay: 0.15s; }
+.reveal--stagger.is-visible > *:nth-child(3) { transition-delay: 0.25s; }
+.reveal--stagger.is-visible > *:nth-child(4) { transition-delay: 0.35s; }
+.reveal--stagger.is-visible > *:nth-child(5) { transition-delay: 0.45s; }
+.reveal--stagger.is-visible > *:nth-child(6) { transition-delay: 0.55s; }
+.reveal--stagger.is-visible > *:nth-child(7) { transition-delay: 0.65s; }
+.reveal--stagger.is-visible > *:nth-child(8) { transition-delay: 0.75s; }
+
+/* Count-up animation for stats */
+.is-counting {
+    color: var(--cyan-500);
+}
+
+/* Service card hover effect */
+.service-card {
+    will-change: transform;
+}
+
+/* Project card filter transition */
+.project-card {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.project-card.is-hidden {
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
+    position: absolute;
+    visibility: hidden;
+}
+
+/* Quote form focus animation */
+.form-field input,
+.form-field select,
+.form-field textarea {
+    position: relative;
+}
+.form-field {
+    position: relative;
+}
+
+/* Glow effect on focus */
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    box-shadow: 0 0 0 4px rgba(0,174,239,0.1);
+}
+
+/* Hero gradient shimmer */
+.hero__bg-overlay {
+    background-size: 200% 200%;
+    animation: heroShimmer 15s ease infinite;
+}
+@keyframes heroShimmer {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+/* Floating animation for icons */
+@keyframes floatIcon {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+.service-card:hover .service-card__icon {
+    animation: floatIcon 1.5s ease-in-out infinite;
+}
+
+/* Page transition in for hero elements */
+@keyframes slideInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Smooth parallax (used by JS) */
+.hero__bg-layer--building {
+    will-change: transform;
+    transition: transform 0.1s linear;
+}
+
+/* Scroll indicator bounce */
+.hero__scroll:hover .hero__scroll-line::after {
+    animation-duration: 1s;
+}
+
+/* Number ticker subtle pulse when counting */
+@keyframes tickerPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* Active state for nav */
+.nav__link.is-active {
+    color: var(--cyan-600);
+    font-weight: 600;
+}
+
+/* Button arrow wiggle on hover */
+.btn--primary:hover svg,
+.service-card__link:hover svg {
+    animation: arrowWiggle 0.4s ease;
+}
+@keyframes arrowWiggle {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(3px); }
+}
+
+/* Reveal-from-bottom utility for any element */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-up.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Magnify on hover for project images */
+.project-card__image {
+    overflow: hidden;
+}
+.project-card:hover .project-card__image svg {
+    transform: scale(1.1);
+}
+
+/* Loading dots for buttons */
+.is-loading {
+    pointer-events: none;
+    opacity: 0.7;
+    position: relative;
+}
+.is-loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Section reveal animation when in viewport */
+section { position: relative; }
